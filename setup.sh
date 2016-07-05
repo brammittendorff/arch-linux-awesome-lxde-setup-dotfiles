@@ -33,3 +33,6 @@ git clone https://aur.archlinux.org/yaourt.git
 cd yaourt
 makepkg -si
 cd ..
+
+# update yaourt
+yaourt -Syu --devel --aur

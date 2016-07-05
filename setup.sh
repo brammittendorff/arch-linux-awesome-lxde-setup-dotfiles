@@ -23,3 +23,13 @@ sudo pacman -S xf86-video-intel libva-intel-driver xf86-input-synaptics
 
 # moar
 sudo pacman -S firefox firejail
+
+# AUR
+git clone https://aur.archlinux.org/package-query.git
+cd package-query
+makepkg -si
+cd ..
+git clone https://aur.archlinux.org/yaourt.git
+cd yaourt
+makepkg -si
+cd ..

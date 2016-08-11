@@ -22,8 +22,11 @@ echo "xterm*selectToClipboard: true" >> ~/.Xdefaults
 mkdir -p ~/.config/awesome
 cp /etc/xdg/awesome/rc.lua ~/.config/awesome
 
-# laptop specific
-sudo pacman -S xf86-video-intel libva-intel-driver xf86-input-synaptics
+# video card drivers
+sudo pacman -S xf86-video-intel libva-intel-driver
+
+# touchpad drivers
+sudo pacman -S xf86-input-synaptics
 
 # moar
 sudo pacman -S firefox firejail

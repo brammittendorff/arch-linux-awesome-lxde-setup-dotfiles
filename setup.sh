@@ -6,6 +6,10 @@ sudo pacman -S lxdm awesome xorg-server xorg-xinit xorg-server-utils mesa xorg-t
 # start lxdm as a service
 sudo systemctl enable lxdm
 
+# enable dhcpcd for the wired network connection
+systemctl enable dhcpcd.service
+systemctl start dhcpcd.service
+
 # programmer stuff
 sudo pacman -S git wget openssh
 
